@@ -42,7 +42,7 @@ import React from 'react'
 
 const App = () => {
   return (
-    <View>
+    <View style={{flex:1,justifyContent:'center',alignSelf:'center'}}>
       <Text>App</Text>
     </View>
   )
