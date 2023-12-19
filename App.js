@@ -1,4 +1,5 @@
-import { StatusBar, View } from 'react-native';
+import 'react-native-gesture-handler';
+import { StatusBar } from 'react-native';
 import React, { useEffect } from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import Navigation from './src/Navigation';

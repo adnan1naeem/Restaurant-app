@@ -114,8 +114,6 @@ PODS:
     - hermes-engine/Pre-built (= 0.72.6)
   - hermes-engine/Pre-built (0.72.6)
   - libevent (2.1.12)
-  - PurchasesHybridCommon (8.0.0):
-    - RevenueCat (= 4.30.5)
   - RCT-Folly (2021.07.22.00):
     - boost
     - DoubleConversion
@@ -533,14 +531,38 @@ PODS:
     - React-jsi (= 0.72.6)
     - React-logger (= 0.72.6)
     - React-perflogger (= 0.72.6)
-  - RevenueCat (4.30.5)
   - RNCAsyncStorage (1.18.2):
+    - React-Core
+  - RNCPicker (2.6.1):
     - React-Core
   - RNGestureHandler (2.12.1):
     - React-Core
-  - RNPurchases (7.4.0):
-    - PurchasesHybridCommon (= 8.0.0)
+  - RNReanimated (3.1.0):
+    - DoubleConversion
+    - FBLazyVector
+    - glog
+    - RCT-Folly
+    - RCTRequired
+    - RCTTypeSafety
+    - React-callinvoker
     - React-Core
+    - React-Core/DevSupport
+    - React-Core/RCTWebSocket
+    - React-CoreModules
+    - React-cxxreact
+    - React-jsi
+    - React-jsiexecutor
+    - React-jsinspector
+    - React-RCTActionSheet
+    - React-RCTAnimation
+    - React-RCTBlob
+    - React-RCTImage
+    - React-RCTLinking
+    - React-RCTNetwork
+    - React-RCTSettings
+    - React-RCTText
+    - ReactCommon/turbomodule/core
+    - Yoga
   - RNScreens (3.22.1):
     - React-Core
     - React-RCTImage
@@ -615,8 +637,9 @@ DEPENDENCIES:
   - React-utils (from `../node_modules/react-native/ReactCommon/react/utils`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - "RNCAsyncStorage (from `../node_modules/@react-native-async-storage/async-storage`)"
+  - "RNCPicker (from `../node_modules/@react-native-picker/picker`)"
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
-  - RNPurchases (from `../node_modules/react-native-purchases`)
+  - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - RNSVG (from `../node_modules/react-native-svg`)
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
@@ -627,9 +650,7 @@ SPEC REPOS:
     - ASN1Decoder
     - fmt
     - libevent
-    - PurchasesHybridCommon
     - ReachabilitySwift
-    - RevenueCat
     - SocketRocket
 
 EXTERNAL SOURCES:
@@ -754,10 +775,12 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon"
   RNCAsyncStorage:
     :path: "../node_modules/@react-native-async-storage/async-storage"
+  RNCPicker:
+    :path: "../node_modules/@react-native-picker/picker"
   RNGestureHandler:
     :path: "../node_modules/react-native-gesture-handler"
-  RNPurchases:
-    :path: "../node_modules/react-native-purchases"
+  RNReanimated:
+    :path: "../node_modules/react-native-reanimated"
   RNScreens:
     :path: "../node_modules/react-native-screens"
   RNSVG:
@@ -797,7 +820,6 @@ SPEC CHECKSUMS:
   glog: 04b94705f318337d7ead9e6d17c019bd9b1f6b1b
   hermes-engine: 8057e75cfc1437b178ac86c8654b24e7fead7f60
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
-  PurchasesHybridCommon: 80262c5ffe6621e3cf3812e6103170f6d7fbcb79
   RCT-Folly: 424b8c9a7a0b9ab2886ffe9c3b041ef628fd4fb1
   RCTRequired: 28469809442eb4eb5528462705f7d852948c8a74
   RCTTypeSafety: e9c6c409fca2cc584e5b086862d562540cb38d29
@@ -832,16 +854,16 @@ SPEC CHECKSUMS:
   React-runtimescheduler: f23e337008403341177fc52ee4ca94e442c17ede
   React-utils: fa59c9a3375fb6f4aeb66714fd3f7f76b43a9f16
   ReactCommon: dd03c17275c200496f346af93a7b94c53f3093a4
-  RevenueCat: c1e33f4e1f1fd239ba461652f02928e220becc31
   RNCAsyncStorage: ddc4ee162bfd41b0d2c68bf2d95acd81dd7f1f93
+  RNCPicker: b18aaf30df596e9b1738e7c1f9ee55402a229dca
   RNGestureHandler: c0d04458598fcb26052494ae23dda8f8f5162b13
-  RNPurchases: 0a8b86ed59f298f25f96ea61e3c54eb85b2c11d8
+  RNReanimated: 3ad8ad71ec4ee4395867bb1a6d8d10695cfb7809
   RNScreens: 50ffe2fa2342eabb2d0afbe19f7c1af286bc7fb3
   RNSVG: 53c661b76829783cdaf9b7a57258f3d3b4c28315
   RNVectorIcons: 64e6a523ac30a3241efa9baf1ffbcc5e76ff747a
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   Yoga: b76f1acfda8212aa16b7e26bcce3983230c82603
 
-PODFILE CHECKSUM: f8c4977ed95522369048a5ea73bdcc976d8a2975
+PODFILE CHECKSUM: 68348b1d5bb73b9502a02cfada128e0cd661bd85
 
 COCOAPODS: 1.14.3

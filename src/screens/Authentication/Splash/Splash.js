@@ -8,7 +8,7 @@ const Splash = ({ navigation }) => {
 
     React.useEffect(() => {
         const timer = setTimeout(async () => {
-            navigation.navigate("Welcome")
+            navigation.replace("Welcome")
         }, 2500);
         return () => clearTimeout(timer);
     }, []);

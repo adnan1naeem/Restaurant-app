@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Unifi Hotspot Manager",
-    "slug": "Unifi_native",
+    "name": "Resturent",
+    "slug": "Resturent",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -10,14 +10,14 @@
       "enabled": true,
       "checkAutomatically": "ON_LOAD",
       "fallbackToCacheTimeout": 0,
-      "url": "https://u.expo.dev/27756e8b-a80e-4206-a5cb-1df4ce0f0932"
+      "url": "https://u.expo.dev/25243e85-a9ea-40ff-aa10-f58420795dc5"
     },
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.frg-technology.unifihotspotmanager",
+      "bundleIdentifier": "com.Techtiz.food",
       "buildNumber": "1.0.0"
     },
     "android": {
@@ -25,14 +25,14 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.unifimanager.hotspot"
+      "package": "com.Techtiz.food"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "27756e8b-a80e-4206-a5cb-1df4ce0f0932"
+        "projectId": "25243e85-a9ea-40ff-aa10-f58420795dc5"
       }
     },
     "runtimeVersion": "1.0.0"

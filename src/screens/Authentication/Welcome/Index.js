@@ -1,18 +1,15 @@
-import { StyleSheet, Image, View } from 'react-native'
+import { Image, View } from 'react-native'
 import React from 'react'
 import { ImageAssets } from '../../../Components/ImageImports'
-import { Dimensions_Height, Dimensions_Widht } from '../../../Utils/Dimensions'
-import { Colors } from '../../../Utils/Colors'
 import CustomButton from '../../../Components/CustomButton'
+import { styles } from './styles'
 
-const Index = () => {
-
+const Index = ({ navigation }) => {
     return (
         <View style={{ flex: 1, }}>
-            <Image source={ImageAssets.Welcome} style={{ height: Dimensions_Height / 1.5, width: Dimensions_Widht, resizeMode: 'contain' }} />
-            <CustomButton text={"qwdwqd"} onPress={() => alert('12')} />
-
-
+            <Image source={ImageAssets.Welcome} style={styles.Image_Welcome} />
+            <CustomButton containerStyle={styles.primary_Button} title={"Zaczynamy"} onPress={() => navigation.navigate('Login')} />
+            <CustomButton title={"Zaloguj"} type='TERTIARY' onPress={() => alert('Coming Soon..')} />
         </View>
     )
 }
