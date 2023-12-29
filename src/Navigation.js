@@ -6,7 +6,8 @@ import Splash from "./screens/Authentication/Splash/Splash";
 import Login from "./screens/Authentication/Login/Index";
 import Welcome from "./screens/Authentication/Welcome/Index";
 import ChoseRestaurant from './screens/Restaurant/ChoseRestaurent/Index';
-import PaymentScreen from './screens/PaymentScreen';
+import PaymentScreen from './screens/PaymentScreen'
+import AddCard from './screens/AddCard';
 import Selected_Restaurant from './screens/Restaurant/Selected_Restaurant/Index'
 
 import Dev_testing from "../Dev_testing";
@@ -23,13 +24,14 @@ const Navigation = () => {
                         backgroundColor: Colors.white,
                     },
                 }}
-                initialRouteName="Login"
+                initialRouteName="AddCard"
             >
                 <Stack.Screen name="Dev_testing" component={Dev_testing} />
                 <Stack.Screen name="Splash" component={Splash} />
                 <Stack.Screen name="Welcome" component={Welcome} />
                 <Stack.Screen name="Login" component={Login} />
                 <Stack.Screen name="ChoseRestaurant" component={ChoseRestaurant} />
+                <Stack.Screen name="AddCard" component={AddCard} />
                 <Stack.Screen name="PaymentScreen" component={PaymentScreen} />
                 <Stack.Screen name="Selected_Restaurant" component={Selected_Restaurant} />
 

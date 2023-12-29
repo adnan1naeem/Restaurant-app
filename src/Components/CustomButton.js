@@ -1,7 +1,6 @@
-import { Image, StyleSheet, Text, TouchableOpacity } from 'react-native'
+import { StyleSheet, Text, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { Colors } from '../Utils/Colors'
-import { Dimensions_Widht } from '../Utils/Dimensions'
 import { Fonts } from './fonts'
 import Feather from 'react-native-vector-icons/Feather'
 
@@ -43,8 +42,8 @@ const styles = StyleSheet.create({
 
     mainbutton: {
         alignSelf: "center",
-        borderRadius: 25,
-        width: Dimensions_Widht / 1.2,
+        borderRadius: 50,
+        width: "100%",
         alignItems: 'center',
         justifyContent: 'space-between',
         paddingHorizontal: 25,

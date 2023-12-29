@@ -1,4 +1,4 @@
-import { TextInput, StyleSheet, Text } from "react-native";
+import { TextInput,View, StyleSheet, Text } from "react-native";
 import React from "react";
 import { Colors } from "../Utils/Colors";
 import { Fonts } from "./fonts";
@@ -6,6 +6,7 @@ import { Fonts } from "./fonts";
 const index = ({
     placeholderText,
     multiLine,
+    headingTitleStyle,
     placeholderTextColor,
     inputTextStyle,
     keyboardType,
@@ -18,15 +19,15 @@ const index = ({
     heading
 }) => {
     return (
-        <>
-            <Text style={styles.title}>{heading}</Text>
+        <View>
+            <Text style={[styles.title,headingTitleStyle]}>{heading}</Text>
             <TextInput
                 onSubmitEditing={onSubmitEditing}
                 placeholder={placeholderText}
                 placeholderTextColor={
                     placeholderTextColor ? placeholderTextColor : Colors.black
                 }
-                style={inputTextStyle ? inputTextStyle : styles.inputContainer}
+                style={[styles.inputContainer,inputTextStyle]}
                 multiline={multiLine}
                 value={value}
                 selectionColor={Colors.Pink}
@@ -36,7 +37,7 @@ const index = ({
                 maxLength={maxlength ? maxlength : null}
                 numberOfLines={numberOfLines}
             />
-        </>
+        </View>
     );
 };
 
