@@ -5,13 +5,11 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Splash from "./screens/Authentication/Splash/Splash";
 import Login from "./screens/Authentication/Login/Index";
 import Welcome from "./screens/Authentication/Welcome/Index";
-import ChoseRestaurant from './screens/Restaurant/ChoseRestaurent/Index'
+import ChoseRestaurant from './screens/Restaurant/ChoseRestaurent/Index';
+import PaymentScreen from './screens/PaymentScreen';
 import Selected_Restaurant from './screens/Restaurant/Selected_Restaurant/Index'
 
 import Dev_testing from "../Dev_testing";
-
-
-
 
 
 const Navigation = () => {
@@ -32,6 +30,7 @@ const Navigation = () => {
                 <Stack.Screen name="Welcome" component={Welcome} />
                 <Stack.Screen name="Login" component={Login} />
                 <Stack.Screen name="ChoseRestaurant" component={ChoseRestaurant} />
+                <Stack.Screen name="PaymentScreen" component={PaymentScreen} />
                 <Stack.Screen name="Selected_Restaurant" component={Selected_Restaurant} />
 
             </Stack.Navigator>
