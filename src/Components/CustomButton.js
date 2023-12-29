@@ -23,7 +23,6 @@ const CustomButton = ({
                 containerStyle,
             ]}>
             {cart &&
-
                 <Feather name='shopping-cart' style={{ fontSize: 20, color: Colors.white }} />
             }
             <Text

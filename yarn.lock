@@ -5782,6 +5782,13 @@ react-native-screens@~3.22.0:
     react-freeze "^1.0.0"
     warn-once "^0.1.0"
 
+react-native-simple-bottom-sheet@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/react-native-simple-bottom-sheet/-/react-native-simple-bottom-sheet-1.0.4.tgz#7f3780079dc273a9d1897e59db15cbec0c05c93a"
+  integrity sha512-yvSId8GFZ/Kb1VmF7BAFJqlT33Ub0HLIo6NAnBT94CENdfxYjEYpq0eaq/VQYSfvU+GgNfP68AH+mgOK9/VQ1Q==
+  dependencies:
+    prop-types "^15.7.2"
+
 react-native-svg@13.9.0:
   version "13.9.0"
   resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-13.9.0.tgz#8df8a690dd00362601f074dec5d3a86dd0f99c7f"
