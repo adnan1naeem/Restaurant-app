@@ -24,7 +24,7 @@ const Navigation = () => {
                         backgroundColor: Colors.white,
                     },
                 }}
-                initialRouteName="AddCard"
+                initialRouteName="Login"
             >
                 <Stack.Screen name="Dev_testing" component={Dev_testing} />
                 <Stack.Screen name="Splash" component={Splash} />
