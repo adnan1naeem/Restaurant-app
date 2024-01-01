@@ -8,8 +8,8 @@ const Index = ({ navigation }) => {
     return (
         <View style={{ flex: 1, }}>
             <Image source={ImageAssets.Welcome} style={styles.Image_Welcome} />
-            <CustomButton containerStyle={styles.primary_Button} title={"Zaczynamy"} onPress={() => navigation.navigate('Login')} />
-            <CustomButton title={"Zaloguj"} type='TERTIARY' onPress={() => alert('Coming Soon..')} />
+            <CustomButton containerStyle={styles.primary_Button} title={"Here we go"} onPress={() => navigation.navigate('PaymentScreen')} />
+            <CustomButton containerStyle={{ width: '90%' }} title={"Log in"} type='TERTIARY' onPress={() => navigation.navigate('Login')} />
         </View>
     )
 }

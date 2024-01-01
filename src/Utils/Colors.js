@@ -12,5 +12,6 @@ export const Colors = {
     Ligt_black: "#767676",
     brown: "#9B5715",
     green: "#00A05D",
+    transparent: '#fbe1e0'
 
 };

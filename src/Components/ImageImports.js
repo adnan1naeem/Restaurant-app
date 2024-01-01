@@ -20,14 +20,11 @@ const drawer = require('../../assets/Icons/Menu.png')
 const pizza = require('../../assets/Pizza.png')
 const Burger = require('../../assets/Burger.png')
 const Chicken = require('../../assets/Chicken.png')
-const pizza1 = require('../../assets/image123.png')
-const pizza2 = require('../../assets/image125.png')
-const pizza3 = require('../../assets/image126.png')
-
+const pizza1 = require('../../assets/image1.png')
+const pizza2 = require('../../assets/Frame7.png')
+const pizza3 = require('../../assets/image1.png')
 const spicy = require('../../assets/Group7620.png')
 const grean_leave = require('../../assets/Group7618.png')
-
-
 
 
 

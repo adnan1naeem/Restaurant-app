@@ -10,7 +10,9 @@ const CustomButton = ({
     type = "PRIMARY",
     containerStyle,
     textStyle,
-    cart
+    cart,
+    numberOfLines,
+    paddingVertical
 }) => {
     return (
         <TouchableOpacity
@@ -19,12 +21,13 @@ const CustomButton = ({
             style={[!cart ?
                 styles.mainbutton : styles.cart,
             styles[`mainbutton_${type}`],
-                containerStyle,
+                containerStyle, { paddingVertical: paddingVertical ? paddingVertical : 20, }
             ]}>
             {cart &&
                 <Feather name='shopping-cart' style={{ fontSize: 20, color: Colors.white }} />
             }
             <Text
+                numberOfLines={numberOfLines}
                 style={[
                     styles.buttonText,
                     styles[`buttonText_${type}`],
@@ -47,7 +50,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'space-between',
         paddingHorizontal: 25,
-        paddingVertical: 20,
+
     },
     cart: {
         flexDirection: 'row',

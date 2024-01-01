@@ -9,6 +9,7 @@ import ChoseRestaurant from './screens/Restaurant/ChoseRestaurent/Index';
 import PaymentScreen from './screens/PaymentScreen'
 import AddCard from './screens/AddCard';
 import Selected_Restaurant from './screens/Restaurant/Selected_Restaurant/Index'
+import OrderDetails from './screens/Checkout/OrderDetail/Index'
 
 import Dev_testing from "../Dev_testing";
 
@@ -24,7 +25,7 @@ const Navigation = () => {
                         backgroundColor: Colors.white,
                     },
                 }}
-                initialRouteName="Login"
+                initialRouteName="Splash"
             >
                 <Stack.Screen name="Dev_testing" component={Dev_testing} />
                 <Stack.Screen name="Splash" component={Splash} />
@@ -34,6 +35,7 @@ const Navigation = () => {
                 <Stack.Screen name="AddCard" component={AddCard} />
                 <Stack.Screen name="PaymentScreen" component={PaymentScreen} />
                 <Stack.Screen name="Selected_Restaurant" component={Selected_Restaurant} />
+                <Stack.Screen name="OrderDetails" component={OrderDetails} />
 
             </Stack.Navigator>
         </NavigationContainer>

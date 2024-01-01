@@ -25,9 +25,8 @@ const App = () => {
 
   return (
     <SafeAreaProvider>
-
       <StatusBar
-        backgroundColor={Colors.primary}
+        backgroundColor={Colors.white}
         barStyle="dark-content"
       />
       <Navigation />

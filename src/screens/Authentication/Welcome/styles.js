@@ -5,9 +5,11 @@ export const styles = StyleSheet.create({
     Image_Welcome: {
         height: Dimensions_Height / 1.5,
         width: Dimensions_Widht,
-        resizeMode: 'contain'
+        // resizeMode: 'contain'
     },
     primary_Button: {
-        marginVertical: 20
+        marginVertical: 20,
+        width: '90%'
+
     }
 });

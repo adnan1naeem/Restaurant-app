@@ -4,11 +4,11 @@ import BackArrowButton from './backArrowButton'
 import { Fonts } from './fonts'
 
 
-const ArrowHeader = ({text}) => {
+const ArrowHeader = ({ text, navigation }) => {
 
     return (
         <View style={styles.header}>
-            <BackArrowButton />
+            <BackArrowButton navigation={navigation} />
             <Text style={styles.headerText}>{text}</Text>
         </View>
     )

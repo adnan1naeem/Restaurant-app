@@ -1,7 +1,8 @@
-import { Image, View } from 'react-native'
+import { Image, StatusBar, View } from 'react-native'
 import React from 'react'
 import { styles } from './Styles'
 import { ImageAssets } from '../../../Components/ImageImports';
+import { Colors } from '../../../Utils/Colors';
 
 
 const Splash = ({ navigation }) => {
@@ -14,9 +15,15 @@ const Splash = ({ navigation }) => {
     }, []);
 
     return (
-        <View style={styles.container}>
-            <Image style={styles.Logo} source={ImageAssets.Logo} />
-        </View>
+        <>
+            <StatusBar
+                backgroundColor={Colors.blue}
+                barStyle="light-content"
+            />
+            <View style={styles.container}>
+                <Image style={styles.Logo} source={ImageAssets.Logo} />
+            </View>
+        </>
     )
 }
 
